@@ -1,0 +1,26 @@
+<html>
+    <head>
+          <meta charset="utf-8">
+    </head>
+    <body>
+       <h1> Текст задачи</h1>
+       <p> Используя форматирование вывода вывести числа от [начального] (ввод с клавиатуры) до [конечного] в виде [n] колонок.</p>
+        <script>
+            	var x = prompt('Введите начальное число'); 
+	           x = parseInt(a);
+	           var y = prompt('Введите конечное число'); 
+	           y = parseInt(b);
+	           var z = prompt('Введите количество колонок'); 
+	           z = parseInt(g);
+	           str = '';
+	           var rows = Math.ceil(y / z); 
+	           for (i = 1; i < y; i++) {
+	               if (i < 10) str += ' ';
+	               str = str + i + ' ';
+	               if (i % rows == 0) str += '\n';
+	               }
+                var res= str + y;
+	           alert('Итог: '+res);
+        </script>
+    </body>
+</html>

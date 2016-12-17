@@ -1,0 +1,31 @@
+<html>
+    <head>
+          <meta charset="utf-8">
+    </head>
+    <body>
+       <h1> Текст задачи</h1>
+       <p> Посчитать значения факториала числа при помощи функции рекурсивно. N! = N*(N-1)! , 1! = 1. Цифры числа записать справа-налево. //153 => 351. Определить является ли указанное число степенью заданного числа. 12 , 2 NO. 16 , 2 YES
+. </p>
+        <script>
+       function recursum(n){
+		  if(n==1) return 1;
+		  if(n<=0) return 0;
+	      return n+recursum(n-1);
+	                   }
+	   function recursum(n){
+		if(n==1) return 1;
+		return n+recursum(n-1);
+	 }
+	 function stepen(n,m){
+		if (n==m){
+		return true}
+		if(m==1) return false
+		if (n%m!=0) return false
+		if (n%m==0){
+		  return stepen(n/m,m)
+			}
+		}
+		alert(stepen(16,4))
+        </script>
+    </body>
+</html>

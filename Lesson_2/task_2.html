@@ -1,0 +1,22 @@
+<html>
+    <head>
+          <meta charset="utf-8">
+    </head>
+    <body>
+       <h1> Текст задачи</h1>
+       <p> Функция проверки авторизации по паре логин-пароль, которая выводит сообщения: Здравствуй, [login]! Неверная пара логин-пароль. логин-пароль должен хранится в объекте "security" с полями login и password. </p>
+        <script>
+           	var login = prompt('Введите логин');
+		    var password = prompt('Введите пароль');
+		    var login_verno = 'Петров';
+		    var password_verno = '123';
+
+		if ( login == login_verno && password === password_verno) {
+		  alert('Здравствуй, ' + login_verno);
+		}
+		else {
+		  alert('Логин/пароль введён не верно');
+		}
+        </script>
+    </body>
+</html>
